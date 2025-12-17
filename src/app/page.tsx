@@ -42,8 +42,8 @@ export default function Home() {
                 asChild
               >
                 <a
-                  href="/Adeyemi_Akitoye_CV.pdf"
-                  download="Adeyemi_Akitoye_CV.pdf"
+                  href="/Adeyemi_Samuel_Akitoye_CV.pdf"
+                  download="Adeyemi_Samuel_Akitoye_CV.pdf"
                   rel="noopener noreferrer"
                 >
                   Download CV
