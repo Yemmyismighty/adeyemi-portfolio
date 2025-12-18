@@ -16,6 +16,9 @@ export default function ThemeToggle() {
 
   const toggleTheme = () => {
     const root = document.documentElement;
+
+    root.classList.add("theme-transition");
+
     if (root.classList.contains("light")) {
       root.classList.remove("light");
       localStorage.setItem("theme", "dark");
@@ -25,6 +28,10 @@ export default function ThemeToggle() {
       localStorage.setItem("theme", "light");
       setIsLight(true);
     }
+
+    setTimeout(() => {
+      root.classList.remove("theme-transition");
+    }, 300);
   };
 
   return (

@@ -27,11 +27,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
         <Nav />
-        <main className="pt-16">{children}</main>
+        <div
+          id="theme-root"
+          className="min-h-screen transition-[opacity,transform] duration-300 ease-out"
+        >
+        
+          <main className="pt-16">{children}</main>
+        </div>
       </body>
     </html>
   );
